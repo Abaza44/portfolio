@@ -1,343 +1,365 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdelrahman Abaza | Portfolio</title>
-
-  <!-- Bootstrap & Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-  <style>
-    :root {
-      --bs-primary: #007bff;
-      --bs-secondary: #adb5bd;
-      --bs-dark-main: #121212;
-      --bs-dark-card: #1e1e1e;
-      --bs-text-light: #f8f9fa;
-    }
-
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: var(--bs-dark-main);
-      color: var(--bs-text-light);
-      scroll-behavior: smooth;
-    }
-
-    /* 🌟 NAVBAR */
-    .navbar {
-      background-color: var(--bs-dark-card) !important;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-      border-bottom: 1px solid #333;
-    }
-    .navbar-brand {
-      font-weight: 700;
-      color: var(--bs-text-light) !important;
-    }
-    .navbar-nav {
-      margin-left: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-    .navbar-nav .nav-link {
-      color: var(--bs-secondary) !important;
-      font-weight: 500;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-      color: white !important;
-      background-color: rgba(0, 123, 255, 0.2);
-    }
-
-    /* 🌟 HERO */
-    #hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      min-height: 90vh;
-      padding-top: 70px;
-      background: linear-gradient(135deg, #121212 0%, #000000 100%);
-    }
-    .header-image {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 6px solid var(--bs-primary);
-      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-    #hero h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      color: white;
-    }
-    #hero .btn {
-      background-color: var(--bs-primary);
-      color: white;
-      font-weight: 700;
-      padding: 12px 40px;
-      border-radius: 10px;
-    }
-
-    /* 🌟 SECTIONS */
-    section {
-      padding: 80px 0;
-      text-align: center;
-    }
-    #skills,
-    #demos {
-      background-color: var(--bs-dark-card);
-    }
-    h2 {
-      font-weight: 700;
-      color: var(--bs-text-light);
-      position: relative;
-      margin-bottom: 50px;
-      display: inline-block;
-    }
-    h2::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background-color: var(--bs-primary);
-      border-radius: 2px;
-    }
-
-    /* 🌟 CARDS */
-    .skill-item,
-    .project-card,
-    .experience-card {
-      background-color: var(--bs-dark-card);
-      color: var(--bs-text-light);
-      border: 1px solid #333;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      transition: all 0.3s ease;
-      padding: 20px;
-    }
-    .skill-item:hover,
-    .project-card:hover,
-    .experience-card:hover {
-      transform: translateY(-5px);
-      border-color: var(--bs-primary);
-    }
-
-    /* 🌟 DEMO SECTION */
-    #demos iframe {
-      border: none;
-      width: 100%;
-      height: 70vh; /* أصغر وأكتر تناسقًا */
-      border-radius: 10px;
-    }
-
-    /* 🌟 FOOTER */
-    #contact {
-      background-color: #000;
-      border-top: 1px solid var(--bs-primary);
-      padding: 60px 0;
-    }
-
-    /* ✨ ANIMATIONS */
-    .animate-on-scroll {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease-out;
-    }
-    .animate-on-scroll.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Abaza | Electronics & Communication Engineer & Software Developer</title>
+    <meta name="description" content="Portfolio of Abdelrahman Abaza, an Electronics and Communication Engineering undergraduate skilled in Software Development, Cybersecurity, and Networking.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">Abdelrahman Abaza</a>
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <img src="media/WhatsApp Image 2025-10-15 at 00.18.17_62e4cd06.jpg" alt="Profile" class="header-image">
-    <h1>Abdelrahman Abaza</h1>
-    <p class="lead text-primary fw-bold">Software Developer & Cybersecurity Enthusiast</p>
-    <p class="fs-5 mb-4">Passionate about creating secure and innovative software solutions.</p>
-    <a href="#projects" class="btn">Explore My Work <i class="fas fa-arrow-right ms-2"></i></a>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p class="fs-5 mx-auto" style="max-width: 800px;">
-        I am an Electronics and Communication Engineer skilled in
-        <strong>C++</strong>, <strong>Python</strong>, and <strong>C#</strong>.
-        I aim to apply my competitive programming and cybersecurity background
-        in real-world projects that challenge and inspire.
-      </p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="container">
-      <h2>Technical Skills</h2>
-      <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
-        <div class="col"><div class="skill-item animate-on-scroll"><i class="fas fa-code"></i> C++</div></div>
-        <div class="col"><div class="skill-item animate-on-scroll"><i class="fab fa-python"></i> Python</div></div>
-        <div class="col"><div class="skill-item animate-on-scroll"><i class="fas fa-laptop-code"></i> C#</div></div>
-        <div class="col"><div class="skill-item animate-on-scroll"><i class="fas fa-globe"></i> HTML & CSS</div></div>
-        <div class="col"><div class="skill-item animate-on-scroll"><i class="fab fa-js"></i> JavaScript</div></div>
-        <div class="col"><div class="skill-item animate-on-scroll"><i class="fas fa-database"></i> SQL</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-        <div class="col">
-          <div class="card project-card h-100 animate-on-scroll">
-            <div class="card-body">
-              <h3 class="card-title text-primary"><i class="fas fa-desktop me-2"></i>DEPI HTML Project 3</h3>
-              <p class="card-text">A responsive website built with HTML and CSS, focusing on modern UI and layout design.</p>
-              <a href="https://github.com/Abaza44/DEPI_HTML_3" target="_blank" class="btn btn-outline-primary btn-sm mt-2">View on GitHub</a>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">A<span>.Abaza</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-          </div>
         </div>
+    </nav>
 
-        <div class="col">
-          <div class="card project-card h-100 animate-on-scroll">
-            <div class="card-body">
-              <h3 class="card-title text-primary"><i class="fas fa-gamepad me-2"></i>GameStore (ASP.NET)</h3>
-              <p class="card-text">A C# ASP.NET Core app for managing and browsing video games.</p>
-              <a href="https://github.com/Abaza44/GameStore" target="_blank" class="btn btn-outline-primary btn-sm mt-2">View on GitHub</a>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content fade-in">
+                <h1 class="name">Hi, I'm Abdelrahman Abaza</h1>
+                <h2 class="title">Backend Developer & Software Engineer</h2>
+                <p class="summary">I build reliable, scalable, and business-focused software systems that turn messy operations into clean digital workflows.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card project-card h-100 animate-on-scroll">
-            <div class="card-body">
-              <h3 class="card-title text-primary"><i class="fas fa-boxes me-2"></i>Material Management System</h3>
-              <p class="card-text">A desktop C# project managing materials, suppliers, and inventory tracking.</p>
-              <a href="https://github.com/Abaza44/MaterialManagement_Final" target="_blank" class="btn btn-outline-primary btn-sm mt-2">View on GitHub</a>
+            <div class="hero-image fade-in">
+                <div class="profile-image-container">
+                    <img src="assets/WhatsApp%20Image%202026-05-10%20at%201.23.34%20AM.jpeg" alt="Abdelrahman Abaza" class="profile-img">
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="col">
-          <div class="card project-card h-100 animate-on-scroll">
-            <div class="card-body">
-              <h3 class="card-title text-primary"><i class="fas fa-code me-2"></i>DEPI HTML Project 2</h3>
-              <p class="card-text">A web layout project built entirely with HTML and CSS, showcasing responsive design.</p>
-              <a href="https://github.com/Abaza44/DEPI_HTML_2" target="_blank" class="btn btn-outline-primary btn-sm mt-2">View on GitHub</a>
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-header fade-in">
+                <h2>About Me</h2>
+                <div class="line"></div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEMO -->
-  <section id="demos">
-    <div class="container-fluid p-0">
-      <h2 class="text-center mb-5">Project Demo</h2>
-      <div class="ratio ratio-16x9" style="max-width: 90%; margin: 0 auto;">
-        <iframe src="https://www.youtube.com/embed/EVfcm96GgHs" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="container">
-      <h2>Experience & Training</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card experience-card mb-4 animate-on-scroll">
-            <div class="card-body">
-              <h3 class="text-primary"><i class="fas fa-graduation-cap me-2"></i> ITI - Trainee</h3>
-              <p>Hands-on training in Networking and Databases (SQL/MongoDB).</p>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Career Objective</h3>
+                    <p>Skilled in designing and developing software solutions, with hands-on experience in web applications, mobile-controlled systems, and smart devices. HCIA-certified in Network Security and proficient in C++, Python, and C#. Solid understanding of networking principles, operating systems (Linux/Windows), and database management. Seeking a challenging software development internship to apply technical expertise and contribute to innovative tech projects.</p>
+                </div>
+                <div class="education fade-in">
+                    <h3>Education</h3>
+                    <div class="glass-card edu-card">
+                        <div class="edu-header">
+                            <h4>Bachelor of Engineering in Electronics and Communication</h4>
+                            <span class="year">Expected July 2027</span>
+                        </div>
+                        <p class="uni">Zagazig University, Zagazig, Egypt</p>
+                        <p class="gpa">GPA: <span class="highlight">3.2/4.0</span></p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card experience-card mb-4 animate-on-scroll">
-            <div class="card-body">
-              <h3 class="text-primary"><i class="fas fa-lock me-2"></i> Huawei HCIA - Network Security</h3>
-              <p>Completed cybersecurity fundamentals covering encryption, threats & firewalls.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="section-header fade-in">
+                <h2>Technical Skills</h2>
+                <div class="line"></div>
             </div>
-          </div>
-          <div class="card experience-card animate-on-scroll">
-            <div class="card-body">
-              <h3 class="text-primary"><i class="fas fa-trophy me-2"></i> ECPC Contestant</h3>
-              <p>11th place at the Egyptian Collegiate Programming Contest, proving strong problem-solving ability.</p>
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="glass-card skill-category fade-in">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Programming</h3>
+                    <ul class="skill-list">
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>Google Apps Script</li>
+                    </ul>
+                </div>
+                <!-- Cybersecurity -->
+                <div class="glass-card skill-category fade-in">
+                    <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <ul class="skill-list">
+                        <li>Network Security Principles (HCIA)</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Encryption & Identity Mgmt</li>
+                        <li>Firewalls & IDS</li>
+                    </ul>
+                </div>
+                <!-- Networking -->
+                <div class="glass-card skill-category fade-in">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Networking & OS</h3>
+                    <ul class="skill-list">
+                        <li>TCP/IP Protocols</li>
+                        <li>Network Config & Troubleshooting</li>
+                        <li>Linux / Windows OS</li>
+                    </ul>
+                </div>
+                <!-- Databases & Tools -->
+                <div class="glass-card skill-category fade-in">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases & Tools</h3>
+                    <ul class="skill-list">
+                        <li>SQL, SQL Server, MongoDB</li>
+                        <li>Git & GitHub</li>
+                        <li>Visual Studio, Arduino IDE</li>
+                        <li>OOP, Algorithms, SDLC</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="soft-skills fade-in">
+                <h3>Soft Skills</h3>
+                <div class="tags">
+                    <span class="tag">Problem-Solving</span>
+                    <span class="tag">Analytical Thinking</span>
+                    <span class="tag">Leadership</span>
+                    <span class="tag">Teamwork</span>
+                    <span class="tag">Communication</span>
+                    <span class="tag">Event Organization</span>
+                    <span class="tag">Adaptability</span>
+                    <span class="tag">Proactive Learner</span>
+                </div>
+            </div>
+        </section>
 
-  <!-- FOOTER -->
-  <footer id="contact">
-    <div class="container text-center">
-      <h2>Get In Touch</h2>
-      <p>I'm always open to new opportunities — feel free to reach out!</p>
-      <div class="mt-4">
-        <a href="mailto:abazaa050@gmail.com" class="text-white me-3"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/abaza-dev/" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Abaza44" class="text-white me-3"><i class="fab fa-github"></i></a>
-      </div>
-      <p class="mt-4 text-muted">&copy; 2025 Abdelrahman Abaza. All Rights Reserved.</p>
-    </div>
-  </footer>
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="section-header fade-in">
+                <h2>Experience & Internships</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+                <!-- DEPI -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full-Stack Trainee</h3>
+                            <span class="date">Jul 2025 – Dec 2025</span>
+                        </div>
+                        <h4 class="company">Digital Egypt Pioneers Initiative – DEPI</h4>
+                        <ul>
+                            <li>Developed full-stack applications using C#, ASP.NET, .NET Core.</li>
+                            <li>Built RESTful APIs and implemented server-side business logic.</li>
+                            <li>Applied debugging, testing, and performance optimization techniques.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ITI -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack .NET Track Trainee</h3>
+                            <span class="date">2024 - 2025</span>
+                        </div>
+                        <h4 class="company">Information Technology Institution (ITI)</h4>
+                        <ul>
+                            <li>Summer Scholarship – Full Stack .NET Track.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Huawei -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <div class="timeline-header">
+                            <h3>Huawei Network Security (HCIA) Trainee</h3>
+                            <span class="date">Nov 2024 – Dec 2024</span>
+                        </div>
+                        <h4 class="company">National Telecommunication Institute (NTI)</h4>
+                        <ul>
+                            <li>Key Learnings: Network Security Basics, Cyber Threats (SQL Injection, Phishing, Ransomware, DDoS Attacks).</li>
+                            <li>Encryption & Identity Management, Firewalls, and Intrusion Detection Systems (IDS).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-header fade-in" style="margin-top: 4rem;">
+                <h2>Extracurricular Activities</h2>
+                <div class="line"></div>
+            </div>
+            <div class="glass-card extra-card fade-in">
+                <div class="timeline-header">
+                    <h3>Technical Lead</h3>
+                    <span class="date">2024 – Present</span>
+                </div>
+                <h4 class="company">GDSC Zagazig University Chapter</h4>
+                <p>Leading technical initiatives and projects within the club.</p>
+            </div>
+        </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="section-header fade-in">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- UG-Bridge -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/Screenshot%202026-02-20%20155932.png" alt="UG-Bridge" class="project-image">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <i class="far fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Abaza44/ug-bridge" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">UG-Bridge</h3>
+                        <p class="project-desc">Professional marketplace platform connecting verified industry experts with clients for consultations. Featuring multi-role authentication, session booking, social feed, and real-time notifications.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>Prisma</span>
+                        <span>NextAuth.js</span>
+                    </div>
+                </div>
 
-  <!-- ✨ Scroll Animation Script -->
-  <script>
-    const elements = document.querySelectorAll(".animate-on-scroll");
-    function animateOnScroll() {
-      elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          el.classList.add("visible", "animate__animated", "animate__fadeInUp");
-        }
-      });
-    }
-    window.addEventListener("scroll", animateOnScroll);
-    animateOnScroll();
-  </script>
+                <!-- Global Contact Scraper -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/Screenshot%202026-04-22%20235801.png" alt="Global Contact Scraper" class="project-image">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <i class="far fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Abaza44/Scraper" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Global Contact Scraper</h3>
+                        <p class="project-desc">End-to-end B2B lead generation and outreach automation system. Automated company scraping, AI-assisted classification, and multi-channel outreach via Zoho SMTP and WhatsApp.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Selenium</span>
+                        <span>Tkinter</span>
+                    </div>
+                </div>
+
+                <!-- Bookify -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/Screenshot%202025-12-12%20004257.png" alt="Bookify" class="project-image">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <i class="far fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AhmedAshrafMosad/BookifyHotelReservationSystem.git" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Bookify Hotel Reservation</h3>
+                        <p class="project-desc">Full-stack Hotel Reservation System with secure user authentication, an admin dashboard, real-time booking management, and integrated payment gateways (PayPal & Stripe).</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>ASP.NET</span>
+                        <span>SQL Server</span>
+                    </div>
+                </div>
+
+                <!-- Game Store -->
+                <div class="glass-card project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <i class="far fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Abaza44/GameStore" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Game Store</h3>
+                        <p class="project-desc">Online platform for selling and managing video games, including inventory tracking, user accounts, order processing, and an integrated payment system.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Full-stack</span>
+                        <span>E-commerce</span>
+                    </div>
+                </div>
+
+                <!-- Material Management -->
+                <div class="glass-card project-card fade-in">
+                    <img src="assets/Screenshot%202026-04-23%20131338.png" alt="Material Management CRM" class="project-image">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <i class="far fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Abaza44/MaterialManagement_Final" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Material Management CRM</h3>
+                        <p class="project-desc">Web-based CRM system to manage inventory, sales, purchases, and client relationships efficiently.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>CRM</span>
+                        <span>Inventory</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="section-header fade-in">
+                <h2>Get In Touch</h2>
+                <div class="line"></div>
+            </div>
+            <div class="glass-card contact-content fade-in">
+                <p>I am currently seeking a challenging software development internship to apply my technical expertise. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-info">
+                    <a href="mailto:abazaa050@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> abazaa050@gmail.com
+                    </a>
+                    <a href="tel:+201149047545" class="contact-link">
+                        <i class="fas fa-phone"></i> (+20) 1149047545
+                    </a>
+                    <a href="https://wa.me/201149047545" target="_blank" class="contact-link">
+                        <i class="fab fa-whatsapp"></i> (+20) 1149047545
+                    </a>
+                    <span class="contact-link location">
+                        <i class="fas fa-map-marker-alt"></i> Cairo, Egypt
+                    </span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abaza-dev/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Abaza44" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/201149047545" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="cta-buttons" style="justify-content: center; margin-top: 1.5rem;">
+                    <a href="mailto:abazaa050@gmail.com" class="btn btn-primary">Say Hello</a>
+                    <a href="https://wa.me/201149047545" target="_blank" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abdelrahman Abaza. Designed & Built with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
